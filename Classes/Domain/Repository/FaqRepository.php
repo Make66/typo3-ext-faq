@@ -39,7 +39,7 @@ class FaqRepository extends Repository
 
         $query->setOrderings(['sorting' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING]);
 
-        if (true) {
+        if (false) {
             $typo3DbQueryParser = GeneralUtility::makeInstance(Typo3DbQueryParser::class);
             $queryBuilder = $typo3DbQueryParser->convertQueryToDoctrineQueryBuilder($query);
             DebuggerUtility::var_dump($queryBuilder->getSQL());
