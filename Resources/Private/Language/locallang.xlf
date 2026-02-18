@@ -15,11 +15,8 @@
             <trans-unit id="flexform.pages" resname="flexform.pages">
                 <source>Record Storage Pages</source>
             </trans-unit>
-            <trans-unit id="flexform.parentCategory" resname="flexform.parentCategory">
-                <source>Parent FAQ Category</source>
-            </trans-unit>
-            <trans-unit id="flexform.pleaseSelect" resname="flexform.pleaseSelect">
-                <source>Please select...</source>
+            <trans-unit id="flexform.selectedCategories" resname="flexform.selectedCategories">
+                <source>FAQ Categories</source>
             </trans-unit>
         </body>
     </file>

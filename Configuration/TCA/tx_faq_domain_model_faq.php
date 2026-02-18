@@ -113,6 +113,7 @@ return [
         'categories' => [
             'config' => [
                 'type' => 'category',
+                'relationship' => 'manyToMany',
             ],
         ],
     ],

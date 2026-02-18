@@ -9,6 +9,8 @@ use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 class Faq extends AbstractEntity
 {
+    protected string $title = '';
+
     protected string $question = '';
 
     protected string $answer = '';
@@ -23,6 +25,16 @@ class Faq extends AbstractEntity
     public function __construct()
     {
         $this->categories = new ObjectStorage();
+    }
+
+    public function getTitle(): string
+    {
+        return $this->title;
+    }
+
+    public function setTitle(string $title): void
+    {
+        $this->title = $title;
     }
 
     public function getQuestion(): string

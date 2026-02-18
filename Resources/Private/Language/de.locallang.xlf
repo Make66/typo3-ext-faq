@@ -19,13 +19,9 @@
                 <source>Record Storage Pages</source>
                 <target>Datensatz-Speicherseiten</target>
             </trans-unit>
-            <trans-unit id="flexform.parentCategory" resname="flexform.parentCategory">
-                <source>Parent FAQ Category</source>
-                <target>Übergeordnete FAQ-Kategorie</target>
-            </trans-unit>
-            <trans-unit id="flexform.pleaseSelect" resname="flexform.pleaseSelect">
-                <source>Please select...</source>
-                <target>Bitte auswählen...</target>
+            <trans-unit id="flexform.selectedCategories" resname="flexform.selectedCategories">
+                <source>FAQ Categories</source>
+                <target>FAQ-Kategorien</target>
             </trans-unit>
         </body>
     </file>

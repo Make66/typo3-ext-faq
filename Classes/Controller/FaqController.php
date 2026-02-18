@@ -18,11 +18,11 @@ class FaqController extends ActionController
     public function listAction(): ResponseInterface
     {
         $pages = GeneralUtility::intExplode(',', $this->settings['pages'] ?? '', true);
-        $parentCategoryUid = (int)($this->settings['parentCategory'] ?? 0);
+        $selectedCategories = GeneralUtility::intExplode(',', $this->settings['selectedCategories'] ?? '', true);
 
         $groupedFaqs = [];
-        if (!empty($pages) && $parentCategoryUid > 0) {
-            $groupedFaqs = $this->faqRepository->findByPagesAndCategory($pages, $parentCategoryUid);
+        if (!empty($pages) && !empty($selectedCategories)) {
+            $groupedFaqs = $this->faqRepository->findByPagesAndCategories($pages, $selectedCategories);
         }
 
         $this->view->assign('groupedFaqs', $groupedFaqs);
