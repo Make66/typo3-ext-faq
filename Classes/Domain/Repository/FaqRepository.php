@@ -37,7 +37,7 @@ class FaqRepository extends Repository
             $query->matching($query->logicalAnd(...$constraints));
         }
 
-        $query->setOrderings(['sorting' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING]);
+        //$query->setOrderings(['sorting' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING]);
 
         if (false) {
             $typo3DbQueryParser = GeneralUtility::makeInstance(Typo3DbQueryParser::class);
