@@ -48,13 +48,6 @@ class FaqRepository extends Repository
 
         $faqs = $query->execute()->toArray();
 
-
-        debug([
-            '$pages' => $pageIds,
-            '$selectedCategories' => $categoryUids,
-            '$faqs' => $faqs,
-        ], __LINE__ . ':' . __CLASS__ . '->' . __FUNCTION__);
-
         $grouped = [];
         /** @var Faq $faq */
         foreach ($faqs as $faq) {
