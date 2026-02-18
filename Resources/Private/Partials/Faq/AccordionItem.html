@@ -1,0 +1,24 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<div class="accordion-item">
+    <h3 class="accordion-header">
+        <button class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-faq-{faq.uid}"
+                aria-expanded="false"
+                aria-controls="collapse-faq-{faq.uid}">
+            {faq.question}
+        </button>
+    </h3>
+    <div id="collapse-faq-{faq.uid}"
+         class="accordion-collapse collapse"
+         data-bs-parent="#{accordionId}">
+        <div class="accordion-body">
+            <f:format.html>{faq.answer}</f:format.html>
+        </div>
+    </div>
+</div>
+
+</html>

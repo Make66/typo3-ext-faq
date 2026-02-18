@@ -1,0 +1,39 @@
+<T3DataStructure>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <sheetTitle>LLL:EXT:faq/Resources/Private/Language/locallang.xlf:flexform.sheet.general</sheetTitle>
+                <type>array</type>
+                <el>
+                    <settings.pages>
+                        <label>LLL:EXT:faq/Resources/Private/Language/locallang.xlf:flexform.pages</label>
+                        <config>
+                            <type>group</type>
+                            <allowed>pages</allowed>
+                            <size>5</size>
+                            <maxitems>99</maxitems>
+                            <minitems>0</minitems>
+                        </config>
+                    </settings.pages>
+                    <settings.parentCategory>
+                        <label>LLL:EXT:faq/Resources/Private/Language/locallang.xlf:flexform.parentCategory</label>
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <foreign_table>sys_category</foreign_table>
+                            <foreign_table_where>ORDER BY sys_category.title ASC</foreign_table_where>
+                            <items>
+                                <numIndex index="0">
+                                    <label>LLL:EXT:faq/Resources/Private/Language/locallang.xlf:flexform.pleaseSelect</label>
+                                    <value>0</value>
+                                </numIndex>
+                            </items>
+                            <minitems>0</minitems>
+                            <maxitems>1</maxitems>
+                        </config>
+                    </settings.parentCategory>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

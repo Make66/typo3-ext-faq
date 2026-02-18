@@ -1,0 +1,43 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:if condition="{groupedFaqs}">
+    <f:then>
+        <div class="faq-container">
+            <f:for each="{groupedFaqs}" as="group" iteration="categoryIterator">
+                <f:variable name="categoryAccordionId" value="faq-category-{group.category.uid}" />
+                <div class="accordion mb-3" id="{categoryAccordionId}">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-category-{group.category.uid}"
+                                    aria-expanded="false"
+                                    aria-controls="collapse-category-{group.category.uid}">
+                                {group.category.title}
+                            </button>
+                        </h2>
+                        <div id="collapse-category-{group.category.uid}"
+                             class="accordion-collapse collapse"
+                             data-bs-parent="#{categoryAccordionId}">
+                            <div class="accordion-body">
+                                <f:variable name="faqAccordionId" value="faq-items-{group.category.uid}" />
+                                <div class="accordion" id="{faqAccordionId}">
+                                    <f:for each="{group.faqs}" as="faq">
+                                        <f:render partial="Faq/AccordionItem" arguments="{faq: faq, accordionId: faqAccordionId}" />
+                                    </f:for>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </f:for>
+        </div>
+    </f:then>
+    <f:else>
+        <p>No FAQs found.</p>
+    </f:else>
+</f:if>
+
+</html>

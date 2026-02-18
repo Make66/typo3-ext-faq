@@ -1,0 +1,19 @@
+{
+    "name": "taketool/faq",
+    "type": "typo3-cms-extension",
+    "description": "FAQ extension with Bootstrap 5 accordion, grouped by system categories",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "typo3/cms-core": "^13.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Taketool\\Faq\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "faq"
+        }
+    }
+}
