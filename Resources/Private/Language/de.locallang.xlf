@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2024-01-01T00:00:00Z" product-name="faq">
+        <header/>
+        <body>
+            <trans-unit id="plugin.faqlist.title" resname="plugin.faqlist.title">
+                <source>FAQ List</source>
+                <target>FAQ-Liste</target>
+            </trans-unit>
+            <trans-unit id="plugin.faqlist.description" resname="plugin.faqlist.description">
+                <source>Displays FAQs grouped by category in a Bootstrap 5 accordion</source>
+                <target>Zeigt FAQs nach Kategorie gruppiert in einem Bootstrap-5-Akkordeon an</target>
+            </trans-unit>
+            <trans-unit id="flexform.sheet.general" resname="flexform.sheet.general">
+                <source>General</source>
+                <target>Allgemein</target>
+            </trans-unit>
+            <trans-unit id="flexform.pages" resname="flexform.pages">
+                <source>Record Storage Pages</source>
+                <target>Datensatz-Speicherseiten</target>
+            </trans-unit>
+            <trans-unit id="flexform.parentCategory" resname="flexform.parentCategory">
+                <source>Parent FAQ Category</source>
+                <target>Übergeordnete FAQ-Kategorie</target>
+            </trans-unit>
+            <trans-unit id="flexform.pleaseSelect" resname="flexform.pleaseSelect">
+                <source>Please select...</source>
+                <target>Bitte auswählen...</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

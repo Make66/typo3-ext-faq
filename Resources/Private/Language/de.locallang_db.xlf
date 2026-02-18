@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" datatype="plaintext" original="messages" date="2024-01-01T00:00:00Z" product-name="faq">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2024-01-01T00:00:00Z" product-name="faq">
         <header/>
         <body>
             <trans-unit id="tx_faq_domain_model_faq" resname="tx_faq_domain_model_faq">
                 <source>FAQ</source>
+                <target>FAQ</target>
             </trans-unit>
             <trans-unit id="tx_faq_domain_model_faq.title" resname="tx_faq_domain_model_faq.title">
                 <source>Title</source>
+                <target>Titel</target>
             </trans-unit>
             <trans-unit id="tx_faq_domain_model_faq.question" resname="tx_faq_domain_model_faq.question">
                 <source>Question</source>
+                <target>Frage</target>
             </trans-unit>
             <trans-unit id="tx_faq_domain_model_faq.answer" resname="tx_faq_domain_model_faq.answer">
                 <source>Answer</source>
+                <target>Antwort</target>
             </trans-unit>
         </body>
     </file>

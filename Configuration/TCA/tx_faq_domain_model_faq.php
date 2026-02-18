@@ -23,7 +23,7 @@ return [
         '1' => [
             'showitem' => '
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
-                    question, answer,
+                    title, question, answer,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,
                     categories,
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
@@ -79,6 +79,15 @@ return [
         'l10n_diffsource' => [
             'config' => [
                 'type' => 'passthrough',
+            ],
+        ],
+        'title' => [
+            'exclude' => false,
+            'label' => 'LLL:EXT:faq/Resources/Private/Language/locallang_db.xlf:tx_faq_domain_model_faq.title',
+            'config' => [
+                'type' => 'input',
+                'size' => 50,
+                'max' => 255,
             ],
         ],
         'question' => [
